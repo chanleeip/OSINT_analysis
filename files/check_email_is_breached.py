@@ -22,8 +22,14 @@ def whether_email_is_breached(emails):
             res=response.json()
             if not res["message"]:
                 print("no breach found")
+                return None
             else:
+                breach_sites=[]
                 print("breach found")
+                for site_name in res["message"]:
+                    print(site_name)
+                    breach_sites.append(site_name)
+                    return breach_sites
 
         else:
             print(f"Error: {response.status_code} - {response.text}")
