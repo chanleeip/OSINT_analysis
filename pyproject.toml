@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "osint-analysis"
+version = "0.1.0"
+description = "winter-internship cyberSecurity project"
+authors = ["chanleeip <chanleeip@gmail.com>"]
+license = "GNU"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.1.4"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
